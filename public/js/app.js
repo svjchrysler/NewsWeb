@@ -68,8 +68,8 @@ $(document).ready(function() {
 							</div>
 							<div class="col-md-11">
 								<div class="row">
-									<div class="col-md-8">
-										<img src="${src}" class="padding-bottom" width="100%" style="margin-top: 1.5em;" />
+									<div class="col-md-8 text-center">
+										<img src="${src}" class="padding-bottom" style="margin-top: 1.5em;" width="100%" />
 									</div>
 									<div class="col-md-4">
 										<div contenteditable class="editable h2"></div>	

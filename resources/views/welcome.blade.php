@@ -3,85 +3,247 @@
 @section('content')
 
 <div class="container" style="background-color: #FFF;">
-  <h3>Ultimas Noticias</h3>  
+    
   <div class="row">
-    <div class="col-md-9">
-        <?php $count = 1; $sw = 0; ?>
-        @foreach($articles as $article)
-          <?php $sw = 0; ?>
-          @if($count == 3)
-              <div class="col-md-4">
-                <div class="thumbnail">
-                  <img src="{{ $article->photo }}" class="img-responsive">
-                  <div class="caption row" style="max-height: 10em;">
-                    <div class="col-md-12" style="overflow: hidden;">
-                      <h4>{{ $article->title }}</h4>
-                      <strong>Fecha:</strong> <small>{{ $article->publicationDate }}</small>
-                    </div>
-                    <div class="col-md-12">
-                      <p class="text-right">
-                        <a href="{{ url('/article/news/'.$article->id) }}">Leer</a>
-                      </p>  
-                    </div>                   
-                  </div>
-                </div>              
+
+    <div class="col-md-9 espacio">
+
+      <!-- Categorias -->
+      <div class="row">
+
+        <div class="col-md-4 separador-col">
+          <div class="row fondo-category separacion">
+            <a href="/econony" class="select-category">
+              <div class="col-md-4" style="border-right: solid; border-color: #FFF;">
+                <img src="icons/money.svg" width="100%">
+              </div>
+              <div class="col-md-8" style="color: #FFF; margin-top:1em;">
+                <span>Economia</span>
+              </div>  
+            </a>            
+          </div>
+        </div>
+
+        <div class="col-md-4 separador-col">
+          <div class="row fondo-category separacion">
+            <a href="/econony" class="select-category">
+              <div class="col-md-4" style="border-right: solid; border-color: #FFF;">
+                <img src="icons/users-group.svg" width="100%">
+              </div>
+              <div class="col-md-8" style="color: #FFF; margin-top:1em;">
+                <span>Poblacion</span>
+              </div>  
+            </a>            
+          </div>
+        </div>
+
+        <div class="col-md-4 separador-col">
+          <div class="row fondo-category separacion">
+            <a href="/econony" class="select-category">
+              <div class="col-md-4" style="border-right: solid; border-color: #FFF;">
+                <img src="icons/tractor-front.svg" width="100%">
+              </div>
+              <div class="col-md-8" style="color: #FFF; margin-top:1em;">
+                <span>Agricultura</span>
+              </div>  
+            </a>            
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-4 separador-col">
+          <div class="row fondo-category separacion">
+            <a href="/econony" class="select-category">
+              <div class="col-md-4" style="border-right: solid; border-color: #FFF;">
+                <img src="icons/light-bulb-on.svg" width="100%">
+              </div>
+              <div class="col-md-8" style="color: #FFF; margin-top:1em;">
+                <span>Ambiente y Energia</span>
+              </div>  
+            </a>            
+          </div>
+        </div>
+
+        <div class="col-md-4 separador-col">
+          <div class="row fondo-category separacion">
+            <a href="/econony" class="select-category">
+              <div class="col-md-4" style="border-right: solid; border-color: #FFF;">
+                <img src="icons/factory.svg" width="100%">
+              </div>
+              <div class="col-md-8" style="color: #FFF; margin-top:.5em;">
+                <span>Industrias, Comercios, Servicios, Transporte</span>
+              </div>  
+            </a>            
+          </div>
+        </div>
+
+        <div class="col-md-4 separador-col">
+          <div class="row fondo-category separacion">
+            <a href="/econony" class="select-category">
+              <div class="col-md-4" style="border-right: solid; border-color: #FFF;">
+                <img src="icons/world.svg" width="100%">
+              </div>
+              <div class="col-md-8" style="color: #FFF; margin-top:.5em;">
+                <span>Comercion Internacional</span>
+              </div>  
+            </a>            
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-4 separador-col">
+          <div class="row fondo-category separacion">
+            <a href="/econony" class="select-category">
+              <div class="col-md-4" style="border-right: solid; border-color: #FFF;">
+                <img src="icons/theatre-pillar.svg" width="100%">
+              </div>
+              <div class="col-md-8" style="color: #FFF; margin-top:1em;">
+                <span>Grecia en la figura</span>
+              </div>  
+            </a>            
+          </div>
+        </div>
+
+        <div class="col-md-4 separador-col">
+          <div class="row fondo-category separacion">
+            <a href="/econony" class="select-category">
+              <div class="col-md-4" style="border-right: solid; border-color: #FFF;">
+                <img src="icons/diagram.svg" width="100%">
+              </div>
+              <div class="col-md-8" style="color: #FFF; margin-top:1em;">
+                <span>Datos Especiales</span>
+              </div>  
+            </a>            
+          </div>
+        </div>
+
+        <div class="col-md-4 separador-col">
+          <div class="row fondo-category separacion">
+            <a href="/econony" class="select-category">
+              <div class="col-md-4" style="border-right: solid; border-color: #FFF;">
+                <img src="icons/group.svg" width="100%">
+              </div>
+              <div class="col-md-8" style="color: #FFF; margin-top:1em;">
+                <span>Censo 2012</span>
+              </div>  
+            </a>            
+          </div>
+        </div>
+      </div>
+
+      <!-- Notas de prensa -->
+      <br>
+      <div class="row back">
+        <div class="col-md-12">
+          <h5 style="font-weight:700;">Noticias</h5>
+          <div class="row" style="margin-left:3em; margin-right:3em; ">
+            <div class="col-md-6">
+              <div class="row" style="border-bottom: solid 1px; border-color: #4C3D33; margin-left:1em;">
+                <div class="col-md-12" style="padding-left:0;">
+                  <h5 style="color: #4C3D33; font-weight:700; margin-bottom:0;">23/07/2016</h5>
+                </div>
+                <div class="col-md-12" style="padding-left:0;">
+                  <p style="margin-bottom:0;">fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd jflkasdjflkasdj flñksadjf</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row" style="border-bottom: solid 1px; border-color: #4C3D33; margin-left:1em;">
+                <div class="col-md-12" style="padding-left:0;">
+                  <h5 style="color: #4C3D33; font-weight:700; margin-bottom:0;">23/07/2016</h5>
+                </div>
+                <div class="col-md-12" style="padding-left:0;">
+                  <p style="margin-bottom:0;">fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd jflkasdjflkasdj flñksadjf</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="margin-left:3em; margin-right:3em;">
+            <div class="col-md-6">
+              <div class="row" style="border-bottom: solid 1px; border-color: #4C3D33; margin-left:1em;">
+                <div class="col-md-12" style="padding-left:0;">
+                  <h5 style="color: #4C3D33; font-weight:700; margin-bottom:0;">23/07/2016</h5>
+                </div>
+                <div class="col-md-12" style="padding-left:0;">
+                  <p style="margin-bottom:0;">fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd jflkasdjflkasdj flñksadjf</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row" style="border-bottom: solid 1px; border-color: #4C3D33; margin-left:1em;">
+                <div class="col-md-12" style="padding-left:0;">
+                  <h5 style="color: #4C3D33; font-weight:700; margin-bottom:0;">23/07/2016</h5>
+                </div>
+                <div class="col-md-12" style="padding-left:0;">
+                  <p style="margin-bottom:0;">fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd jflkasdjflkasdj flñksadjf</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="margin-left:3em; margin-right:3em;">
+            <div class="col-md-6">
+              <div class="row" style="border-bottom: solid 1px; border-color: #4C3D33; margin-left:1em;">
+                <div class="col-md-12" style="padding-left:0;">
+                  <h5 style="color: #4C3D33; font-weight:700; margin-bottom:0;">23/07/2016</h5>
+                </div>
+                <div class="col-md-12" style="padding-left:0;">
+                  <p style="margin-bottom:0;">fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd jflkasdjflkasdj flñksadjf</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row" style="border-bottom: solid 1px; border-color: #4C3D33; margin-left:1em;">
+                <div class="col-md-12" style="padding-left:0;">
+                  <h5 style="color: #4C3D33; font-weight:700; margin-bottom:0;">23/07/2016</h5>
+                </div>
+                <div class="col-md-12" style="padding-left:0;">
+                  <p style="margin-bottom:0;">fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd jflkasdjflkasdj flñksadjf</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row" style="margin-left:3em; margin-right:3em;">
+            <div class="col-md-6">
+              <div class="row" style="border-bottom: solid 1px; border-color: #4C3D33; margin-left:1em;">
+                <div class="col-md-12" style="padding-left:0;">
+                  <h5 style="color: #4C3D33; font-weight:700; margin-bottom:0;">23/07/2016</h5>
+                </div>
+                <div class="col-md-12" style="padding-left:0;">
+                  <p style="margin-bottom:0;">fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd jflkasdjflkasdj flñksadjf</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row" style="border-bottom: solid 1px; border-color: #4C3D33; margin-left:1em;">
+                <div class="col-md-12" style="padding-left:0;">
+                  <h5 style="color: #4C3D33; font-weight:700; margin-bottom:0;">23/07/2016</h5>
+                </div>
+                <div class="col-md-12" style="padding-left:0;">
+                  <p style="margin-bottom:0;">fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd jflkasdjflkasdj flñksadjf</p>
+                </div>
               </div>
             </div>
 
-            <?php $count=1; $sw = 1; ?>    
-          @endif
-
-          @if($count == 2)
-              <div class="col-md-4">
-                <div class="thumbnail">
-                  <img src="{{ $article->photo }}" class="img-responsive">
-                  <div class="caption row" style="max-height: 10em;">
-                    <div class="col-md-12" style="overflow: hidden;">
-                      <h4>{{ $article->title }}</h4>
-                      <strong>Fecha:</strong> <small>{{ $article->publicationDate }}</small>
-                    </div>
-                    <div class="col-md-12">
-                      <p class="text-right">
-                        <a href="{{ url('/article/news/'.$article->id) }}">Leer</a>
-                      </p>  
-                    </div>                   
-                  </div>
-                </div>              
-              </div>  
-            <?php $count++; ?>
-          @endif   
-
-          @if($count == 1 && $sw == 0)
-            <div class="row">      
-              <div class="col-md-4">
-                <div class="thumbnail">
-                  <img src="{{ $article->photo }}" class="img-responsive">
-                  <div class="caption row" style="max-height: 10em;">
-                    <div class="col-md-12" style="overflow: hidden;">
-                      <h4>{{ $article->title }}</h4>  
-                      <strong>Fecha:</strong> <small>{{ $article->publicationDate }}</small>
-                    </div>
-                    <div class="col-md-12">
-                      <p class="text-right">
-                        <a href="{{ url('/article/news/'.$article->id) }}">Leer</a>
-                      </p>  
-                    </div>                   
-                  </div>
-                </div>              
-              </div>
-            <?php $count++; ?>    
-          @endif
-                  
-        @endforeach
-        
-        @if($count == 2 || $count == 3)
           </div>
-        @endif
-        
+          <br><br>
+        </div>
+        <br>
+        <br>
+      </div>
+      <br>
     </div>
+
     <div class="col-md-3 hidden-xs">
-      
-      <div class="panel panel-default">
+      <br>
+      <div class="panel panel-success">
         <div class="panel-heading">Boletines</div>
         <div class="panel-body">
             <div class="panel panel-success">
@@ -104,9 +266,11 @@
         </div>
         </div>  
       </div>  
-      
-    
+  
     </div>
+
+  </div>
+
   </div>
 </div>
 @endsection
