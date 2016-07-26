@@ -1,0 +1,136 @@
+
+.container-fluid .file-img {
+	position: absolute;
+	top: 18em;
+	left: 50em;
+	display: none;
+}
+
+.img {
+	width: 50%;
+}
+
+.margin-top {
+	margin-top: 2em;
+}
+
+.btn-option-title {
+	margin-top: 2em;
+}
+
+.btn-option-subtitle {
+	margin-top: 1.5em;
+}
+
+.position-container {
+	position: absolute;
+	width: 99%;
+	background-color: #000;
+	top: 700px;
+}
+
+.editable {
+	width: 100%;
+	padding: 10px;
+	border-bottom: solid;
+	margin-top: 1em;
+}
+
+.padding {
+	padding-left: 3em;
+	padding-right: 3em; 
+}
+
+/*			Estilos de noticia			*/
+
+.position-header {
+	width: 100%; 
+	height:100%;
+}
+
+.h1 {
+	font-size: 24px;
+	color: #424242;
+}
+
+.h2 {
+	font-size: 21px;
+	color: #37474F;
+}
+
+.p {
+	font-size: 18px;
+	color: #616161;
+}
+
+.margin {
+	margin: 0px;
+	padding: 0px;
+}
+
+.jumbotron {
+	margin: 0px;
+	width: 100%;
+	padding: 0px;
+	background-size: cover;
+}
+
+.container-fluid .jumbotron {
+	padding: 0;	
+}
+
+.img-header {
+	width: 100%;
+}
+
+.position-header {
+	overflow: hidden;
+	max-height: 25em;
+}
+
+.btn-save {
+	margin-top: 1em;
+	margin-bottom: 3em;
+}
+
+.navbar {
+	background-color: #4CAF50;
+}
+
+.navbar-brand {
+	font-size: 2em;
+	font-weight: 700;
+}
+
+.navbar-header .navbar-brand:hover {
+	color: #FFF;
+}
+
+.navbar-header .navbar-brand {
+	color: #FFF;
+}
+
+.nav li a {
+	color: #FFF;
+}
+
+.nav .dropdown .dropdown-menu{
+	background-color: #1B5E20;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+	background-color: #1B5E20;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+	background-color: #4CAF50;	
+}
+
+.position-fixed {
+	position: absolute;
+	bottom: 0;
+
+
+	width: 100%;
+	background-color: #4CAF50;
+}
