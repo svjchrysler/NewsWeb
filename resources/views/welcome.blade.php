@@ -14,10 +14,10 @@
         <div class="col-md-4 separador-col">
           <div class="row fondo-category separacion">
             <a href="/econony" class="select-category">
-              <div class="col-md-4" style="border-right: solid; border-color: #FFF;">
+              <div class="col-md-4 col-space">
                 <img src="icons/money.svg" width="100%">
               </div>
-              <div class="col-md-8" style="color: #FFF; margin-top:1em;">
+              <div class="col-md-8 margin-col">
                 <span>Economia</span>
               </div>  
             </a>            
@@ -27,10 +27,10 @@
         <div class="col-md-4 separador-col">
           <div class="row fondo-category separacion">
             <a href="/econony" class="select-category">
-              <div class="col-md-4" style="border-right: solid; border-color: #FFF;">
+              <div class="col-md-4 col-space">
                 <img src="icons/users-group.svg" width="100%">
               </div>
-              <div class="col-md-8" style="color: #FFF; margin-top:1em;">
+              <div class="col-md-8 margin-col">
                 <span>Poblacion</span>
               </div>  
             </a>            
@@ -40,10 +40,10 @@
         <div class="col-md-4 separador-col">
           <div class="row fondo-category separacion">
             <a href="/econony" class="select-category">
-              <div class="col-md-4" style="border-right: solid; border-color: #FFF;">
+              <div class="col-md-4 col-space">
                 <img src="icons/tractor-front.svg" width="100%">
               </div>
-              <div class="col-md-8" style="color: #FFF; margin-top:1em;">
+              <div class="col-md-8 margin-col">
                 <span>Agricultura</span>
               </div>  
             </a>            
@@ -57,10 +57,10 @@
         <div class="col-md-4 separador-col">
           <div class="row fondo-category separacion">
             <a href="/econony" class="select-category">
-              <div class="col-md-4" style="border-right: solid; border-color: #FFF;">
+              <div class="col-md-4 col-space">
                 <img src="icons/light-bulb-on.svg" width="100%">
               </div>
-              <div class="col-md-8" style="color: #FFF; margin-top:1em;">
+              <div class="col-md-8 margin-col">
                 <span>Ambiente y Energia</span>
               </div>  
             </a>            
@@ -70,10 +70,10 @@
         <div class="col-md-4 separador-col">
           <div class="row fondo-category separacion">
             <a href="/econony" class="select-category">
-              <div class="col-md-4" style="border-right: solid; border-color: #FFF;">
+              <div class="col-md-4 col-space">
                 <img src="icons/factory.svg" width="100%">
               </div>
-              <div class="col-md-8" style="color: #FFF; margin-top:.5em;">
+              <div class="col-md-8 margin-col">
                 <span>Industrias, Comercios, Servicios, Transporte</span>
               </div>  
             </a>            
@@ -83,10 +83,10 @@
         <div class="col-md-4 separador-col">
           <div class="row fondo-category separacion">
             <a href="/econony" class="select-category">
-              <div class="col-md-4" style="border-right: solid; border-color: #FFF;">
+              <div class="col-md-4 col-space">
                 <img src="icons/world.svg" width="100%">
               </div>
-              <div class="col-md-8" style="color: #FFF; margin-top:.5em;">
+              <div class="col-md-8 margin-col">
                 <span>Comercion Internacional</span>
               </div>  
             </a>            
@@ -99,10 +99,10 @@
         <div class="col-md-4 separador-col">
           <div class="row fondo-category separacion">
             <a href="/econony" class="select-category">
-              <div class="col-md-4" style="border-right: solid; border-color: #FFF;">
+              <div class="col-md-4 col-space">
                 <img src="icons/theatre-pillar.svg" width="100%">
               </div>
-              <div class="col-md-8" style="color: #FFF; margin-top:1em;">
+              <div class="col-md-8 margin-col">
                 <span>Grecia en la figura</span>
               </div>  
             </a>            
@@ -112,10 +112,10 @@
         <div class="col-md-4 separador-col">
           <div class="row fondo-category separacion">
             <a href="/econony" class="select-category">
-              <div class="col-md-4" style="border-right: solid; border-color: #FFF;">
+              <div class="col-md-4 col-space">
                 <img src="icons/diagram.svg" width="100%">
               </div>
-              <div class="col-md-8" style="color: #FFF; margin-top:1em;">
+              <div class="col-md-8 margin-col">
                 <span>Datos Especiales</span>
               </div>  
             </a>            
@@ -125,10 +125,10 @@
         <div class="col-md-4 separador-col">
           <div class="row fondo-category separacion">
             <a href="/econony" class="select-category">
-              <div class="col-md-4" style="border-right: solid; border-color: #FFF;">
+              <div class="col-md-4 col-space">
                 <img src="icons/group.svg" width="100%">
               </div>
-              <div class="col-md-8" style="color: #FFF; margin-top:1em;">
+              <div class="col-md-8 margin-col">
                 <span>Censo 2012</span>
               </div>  
             </a>            
