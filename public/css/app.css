@@ -175,12 +175,12 @@
 
 .margin-col {
 	color: #FFF; 
-	margin-top:1.5em;
-	font-size: 10px;
+	margin-top:1em;
+	font-size: 12px;
 }
 
 .container {
-	width: 70%;
+	width: 80%;
 }
 
 .subtitle {
@@ -226,4 +226,8 @@
 	color: #4C3D33; 
 	font-weight:700; 
 	margin-bottom:0;
+}
+
+.col-variado {
+	margin-top:0;
 }

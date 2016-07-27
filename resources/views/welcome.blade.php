@@ -73,8 +73,8 @@
               <div class="col-md-4 col-space">
                 <img src="icons/factory.svg" width="100%">
               </div>
-              <div class="col-md-8 margin-col" style="margin-top:1em;">
-                <span>Industrias, Comercios, Servicios, Transporte</span>
+              <div class="col-md-8 margin-col col-variado">
+                <span>Industrias y Comercios</span>
               </div>  
             </a>            
           </div>
@@ -86,7 +86,7 @@
               <div class="col-md-4 col-space">
                 <img src="icons/world.svg" width="100%">
               </div>
-              <div class="col-md-8 margin-col">
+              <div class="col-md-8 margin-col col-variado">
                 <span>Comercion Internacional</span>
               </div>  
             </a>            
@@ -153,7 +153,7 @@
                     </div>
                     <div class="col-md-12 padding-col">
                       <a href="#">
-                        <p>fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd</p>
+                        <p>Mauris vehicula felis quis arcu rutrum, sed faucibus nibh fringilla. Integer in enim euismod.</p>
                       </a>
                     </div>
                   </div>
@@ -169,7 +169,7 @@
                     </div>
                     <div class="col-md-12 padding-col">
                       <a href="#">
-                        <p>fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd</p>  
+                        <p>Mauris vehicula felis quis arcu rutrum, sed faucibus nibh fringilla. Integer in enim euismod.</p>  
                       </a>
                     </div>
                   </div>
@@ -181,32 +181,6 @@
           @if($count == 2)
             </div>
           @endif
-
-          <div class="row row-style">
-            <div class="col-md-6">
-              <div class="row">
-                <div class="col-md-12 padding-col">
-                  <h5 class="h5-date">23/07/2016</h5>
-                </div>
-                <div class="col-md-12 padding-col">
-                  <a href="#">
-                    <p>fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd jflkasdjflkasdj flñksadjf</p>  
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="row">
-                <div class="col-md-12 padding-col">
-                  <h5 class="h5-date">23/07/2016</h5>
-                </div>
-                <div class="col-md-12 padding-col">
-                  <p>fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd jflkasdjflkasdj flñksadjf</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
           
           <br><br>
         </div>
@@ -219,13 +193,13 @@
     <div class="col-md-4 hidden-xs">
       <br>
       <div class="panel panel-success">
-        <div class="panel-heading">Boletines</div>
+        <div class="panel-heading">Datos Interesantes</div>
         <div class="panel-body">
             <div class="panel panel-success">
-          <div class="panel-heading">Boletines Informativos 1</div>
+          <div class="panel-heading">Boletin Informativo</div>
           <div class="panel-body">
             <p>
-              sdj flksajd;lfk jsa;dlfjs;ldkfj;ls kdjflaksjdlfahs;jdf hasdkjfhadksljgf alskdjhferhfoerhfiuerh jdhgjdfghdfljgh dflkjg
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum interdum augue felis, quis bibendum nisl maximus eu. Nam vitae lacus turpis. Morbi cursus, tellus a eleifend iaculis, leo lectus consectetur quam, sit amet vestibulum nisi erat et est. Curabitur dictum blandit pulvinar. In tincidunt accumsan laoreet. 
             </p>
           </div>
         </div>
@@ -235,12 +209,7 @@
             <canvas id="myChart" width="100%" height="100%"></canvas>
           </div>
         </div>
-        <div class="panel panel-success">
-          <div class="panel-heading">Boletines Informativos 3</div>
-          <div class="panel-body">
-            <img src="img/logogobernacion.png" class="img-responsive" alt="">
-          </div>
-        </div>
+       
         </div>  
       </div>  
   
