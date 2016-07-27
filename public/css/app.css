@@ -138,7 +138,7 @@
 }
 
 .fondo-category {
-	background-color: #2D738C; 
+	background-color: #CDDC39; 
 	padding:10px;
 	color: #FFF;
 }
@@ -148,7 +148,7 @@
 }
 
 .fondo-category:hover {
-	background-color: #C02E1D;
+	background-color: #29B6F6;
 }
 
 .borde {
