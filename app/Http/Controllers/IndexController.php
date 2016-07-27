@@ -13,7 +13,7 @@ use DB;
 class IndexController extends Controller
 {
 	public function index() {
-		$articles = DB::table('articles')->select('articles.id', 'articles.title', 'articles.photo', 'articles.publicationDate')
+		$articles = DB::table('articles')->select('articles.id', 'articles.title', 'articles.publicationDate')
 										->orderby('articles.created_at', 'desc')
 										->get();
 		return view('welcome')->with('articles', $articles);

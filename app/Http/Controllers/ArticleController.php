@@ -32,10 +32,10 @@ class ArticleController extends Controller
 		$date = Carbon::now();
 		$article->publicationDate = $date->format('Y-m-d');
 		$article->save();
-		$articles = DB::table('articles')->select('articles.id', 'articles.title', 'articles.photo', 'articles.publicationDate')
+		/*$articles = DB::table('articles')->select('articles.id', 'articles.title', 'articles.publicationDate')
 										->orderby('articles.created_at', 'desc')
-										->get();
-		return view('welcome')->with('articles', $articles);
+										->get();*/
+		return redirect('/')/*->with('articles', $articles)*/;
 	}
 
 	public function news($id) {

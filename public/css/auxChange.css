@@ -26,3 +26,17 @@
 .padding-bottom {
 	padding-bottom: 1em;
 }
+
+.margin-espacio {
+	margin-left: 1em;
+}
+
+.espacios-blanco {
+	padding-bottom: 0;
+}
+
+.espacio-subtitle {
+	padding-bottom: 0;
+    padding-top: 0;
+    margin-top: 0;
+}

@@ -149,11 +149,11 @@
                 <div class="col-md-6">
                   <div class="row">
                     <div class="col-md-12 padding-col">
-                      <h5 class="h5-date">23/07/2016</h5>
+                      <h5 class="h5-date">{{ $article->publicationDate }}</h5>
                     </div>
                     <div class="col-md-12 padding-col">
-                      <a href="#">
-                        <p>Mauris vehicula felis quis arcu rutrum, sed faucibus nibh fringilla. Integer in enim euismod.</p>
+                      <a href="{{ url('article/news/'.$article->id) }}">
+                        <p>{{ $article->title }}</p>
                       </a>
                     </div>
                   </div>
@@ -165,11 +165,11 @@
                 <div class="col-md-6">
                   <div class="row">
                     <div class="col-md-12 padding-col">
-                      <h5 class="h5-date">23/07/2016</h5>
+                      <h5 class="h5-date">{{ $article->publicationDate }}</h5>
                     </div>
                     <div class="col-md-12 padding-col">
-                      <a href="#">
-                        <p>Mauris vehicula felis quis arcu rutrum, sed faucibus nibh fringilla. Integer in enim euismod.</p>  
+                      <a href="{{ url('article/news/'.$article->id) }}">
+                        <p>{{ $article->title }}</p>  
                       </a>
                     </div>
                   </div>

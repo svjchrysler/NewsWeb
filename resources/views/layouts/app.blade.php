@@ -45,8 +45,10 @@
                         </div>
                         <div class="collapse navbar-collapse" id="app-navbar-collapse">
                             <ul class="nav navbar-nav">
+                                <li><a href="{{ url('/') }}">Inicio</a></li>
                                 <li><a href="{{ url('/history') }}">Historia</a></li>
                                 <li><a href="{{ url('/aboutus') }}">Quienes Somos?</a></li>
+                                <li><a href="http://100.192.1.196/" target="_blank" >Visualizador</a></li>
                             </ul>
                         </div>
                     </div>
@@ -63,7 +65,7 @@
     
     <div class="container" style="background-color: #FFF;position:relative; background-color: #FFF;">
         
-        <div class="row" style="position: absolute; width: 100%; background-color: #FFF; padding-bottom:1em;">
+        <div class="row" style="position: absolute; width: 100%; background-color: #FFF; padding-bottom:.5em;">
             <div class="col-md-12">
                 <div class="row">
                     <div class="col-md-12">

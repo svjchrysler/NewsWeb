@@ -33,7 +33,7 @@ $(document).ready(function() {
 								</button>
 							</div>
 							<div class="col-md-11">
-								<div contenteditable class="editable h2"></div>
+								<div contenteditable class="editable h2 tipografia espacio-subtitle"></div>
 							</div>
 						</div>`
 		count++;
@@ -48,7 +48,7 @@ $(document).ready(function() {
 								</button>
 							</div>
 							<div class="col-md-11">
-								<div contenteditable class="editable p text-justify"></div>
+								<div contenteditable class="editable p text-justify tipografia"></div>
 							</div>
 						</div>`
 		count++;
@@ -67,13 +67,13 @@ $(document).ready(function() {
 								</button>
 							</div>
 							<div class="col-md-11">
-								<div class="row">
+								<div class="row margin-espacio">
 									<div class="col-md-8 text-center">
 										<img src="${src}" class="padding-bottom" style="margin-top: 1.5em;" width="100%" />
 									</div>
 									<div class="col-md-4">
-										<div contenteditable class="editable h2"></div>	
-										<div contenteditable class="editable p text-justify"></div>
+										<div contenteditable class="editable h2 tipografia espacios-blanco"></div>	
+										<div contenteditable class="editable p tipografia espacios-blanco"></div>
 									</div>
 								</div>
 							</div>
