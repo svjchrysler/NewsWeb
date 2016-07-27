@@ -75,8 +75,10 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="padding-left">
+                                    <a href="{{ url('/') }}">Inicio</a><br>
                                     <a href="{{ url('history') }}">Historia</a><br>
-                                    <a href="{{ url('aboutus') }}">Quienes Somos?</a>
+                                    <a href="{{ url('aboutus') }}">Quienes Somos?</a><br>
+                                    <a href="http://100.192.1.196/" target="_blank" >Visualizador</a>
                                 </div>
                             </div>
                             <div class="col-md-6 text-right margin-top">
