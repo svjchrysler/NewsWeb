@@ -115,7 +115,11 @@
 }
 
 .nav .dropdown .dropdown-menu{
-	background-color: #1B5E20;
+	background-color: #007743;
+}
+
+.container-fondo {
+	background-color: #007743;	
 }
 
 .nav>li>a:focus, .nav>li>a:hover {
@@ -230,4 +234,20 @@
 
 .col-variado {
 	margin-top:0;
+}
+
+.separaciones {
+	padding-top: 1em;
+	padding-bottom: 0;
+	border-bottom: solid;
+	border-color: #4CAF50;
+}
+
+.padding-left {
+	padding-left: 2em;
+	padding-top: 1em;
+}
+
+.margin-top {
+	margin-top: 1.5em;
 }

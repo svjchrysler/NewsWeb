@@ -193,7 +193,7 @@
     <div class="col-md-4 hidden-xs">
       <br>
       <div class="panel panel-success">
-        <div class="panel-heading">Datos Interesantes</div>
+        <div class="panel-heading">Productos Estadisticos</div>
         <div class="panel-body">
             <div class="panel panel-success">
           <div class="panel-heading">Boletin Informativo</div>
