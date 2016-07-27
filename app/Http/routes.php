@@ -22,3 +22,5 @@ Route::get('article/news/{id}', 'ArticleController@news');
 
 Route::get('aboutus', 'IndexController@about');
 Route::get('history', 'IndexController@history');
+
+Route::get('visualizador', 'IndexController@visualizador');

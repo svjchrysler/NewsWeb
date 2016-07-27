@@ -28,4 +28,9 @@ class IndexController extends Controller
 		return view('history');
 	}
 
+	public function visualizador()
+	{
+		return view('visualizador');
+	}
+
 }

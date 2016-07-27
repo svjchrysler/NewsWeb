@@ -48,7 +48,7 @@
                                 <li><a href="{{ url('/') }}">Inicio</a></li>
                                 <li><a href="{{ url('/history') }}">Marco Legal</a></li>
                                 <li><a href="{{ url('/aboutus') }}">Quienes Somos?</a></li>
-                                <li><a href="http://100.192.1.196/" target="_blank" >Visualizador</a></li>
+                                <li><a href="{{ url('/visualizador') }}">Visualizador</a></li>
                             </ul>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                                     <a href="{{ url('/') }}">Inicio</a><br>
                                     <a href="{{ url('history') }}">Marco Legal</a><br>
                                     <a href="{{ url('aboutus') }}">Quienes Somos?</a><br>
-                                    <a href="http://100.192.1.196/" target="_blank" >Visualizador</a>
+                                    <li><a href="{{ url('/visualizador') }}">Visualizador</a></li>
                                 </div>
                             </div>
                             <div class="col-md-6 text-right margin-top">
