@@ -6,7 +6,7 @@
     
   <div class="row">
 
-    <div class="col-md-9 espacio">
+    <div class="col-md-8 espacio">
 
       <!-- Categorias -->
       <div class="row">
@@ -73,7 +73,7 @@
               <div class="col-md-4 col-space">
                 <img src="icons/factory.svg" width="100%">
               </div>
-              <div class="col-md-8 margin-col">
+              <div class="col-md-8 margin-col" style="margin-top:1em;">
                 <span>Industrias, Comercios, Servicios, Transporte</span>
               </div>  
             </a>            
@@ -140,99 +140,74 @@
       <br>
       <div class="row back">
         <div class="col-md-12">
-          <h5 style="font-weight:700;">Noticias</h5>
-          <div class="row" style="margin-left:3em; margin-right:3em; ">
-            <div class="col-md-6">
-              <div class="row" style="border-bottom: solid 1px; border-color: #4C3D33; margin-left:1em;">
-                <div class="col-md-12" style="padding-left:0;">
-                  <h5 style="color: #4C3D33; font-weight:700; margin-bottom:0;">23/07/2016</h5>
+          <h5 class="h5-style">Noticias</h5>
+
+
+          <?php $count = 1; ?>
+          @foreach($articles as $article)
+            @if($count == 2)
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-12 padding-col">
+                      <h5 class="h5-date">23/07/2016</h5>
+                    </div>
+                    <div class="col-md-12 padding-col">
+                      <a href="#">
+                        <p>fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd</p>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-12" style="padding-left:0;">
-                  <p style="margin-bottom:0;">fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd jflkasdjflkasdj flñksadjf</p>
+              </div>
+              <?php $count = 1; ?>
+            @else
+              <div class="row row-style">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-md-12 padding-col">
+                      <h5 class="h5-date">23/07/2016</h5>
+                    </div>
+                    <div class="col-md-12 padding-col">
+                      <a href="#">
+                        <p>fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd</p>  
+                      </a>
+                    </div>
+                  </div>
+                </div>  
+              <?php $count++; ?>              
+            @endif
+          @endforeach
+
+          @if($count == 2)
+            </div>
+          @endif
+
+          <div class="row row-style">
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-12 padding-col">
+                  <h5 class="h5-date">23/07/2016</h5>
+                </div>
+                <div class="col-md-12 padding-col">
+                  <a href="#">
+                    <p>fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd jflkasdjflkasdj flñksadjf</p>  
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="row" style="border-bottom: solid 1px; border-color: #4C3D33; margin-left:1em;">
-                <div class="col-md-12" style="padding-left:0;">
-                  <h5 style="color: #4C3D33; font-weight:700; margin-bottom:0;">23/07/2016</h5>
+              <div class="row">
+                <div class="col-md-12 padding-col">
+                  <h5 class="h5-date">23/07/2016</h5>
                 </div>
-                <div class="col-md-12" style="padding-left:0;">
-                  <p style="margin-bottom:0;">fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd jflkasdjflkasdj flñksadjf</p>
+                <div class="col-md-12 padding-col">
+                  <p>fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd jflkasdjflkasdj flñksadjf</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="row" style="margin-left:3em; margin-right:3em;">
-            <div class="col-md-6">
-              <div class="row" style="border-bottom: solid 1px; border-color: #4C3D33; margin-left:1em;">
-                <div class="col-md-12" style="padding-left:0;">
-                  <h5 style="color: #4C3D33; font-weight:700; margin-bottom:0;">23/07/2016</h5>
-                </div>
-                <div class="col-md-12" style="padding-left:0;">
-                  <p style="margin-bottom:0;">fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd jflkasdjflkasdj flñksadjf</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="row" style="border-bottom: solid 1px; border-color: #4C3D33; margin-left:1em;">
-                <div class="col-md-12" style="padding-left:0;">
-                  <h5 style="color: #4C3D33; font-weight:700; margin-bottom:0;">23/07/2016</h5>
-                </div>
-                <div class="col-md-12" style="padding-left:0;">
-                  <p style="margin-bottom:0;">fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd jflkasdjflkasdj flñksadjf</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row" style="margin-left:3em; margin-right:3em;">
-            <div class="col-md-6">
-              <div class="row" style="border-bottom: solid 1px; border-color: #4C3D33; margin-left:1em;">
-                <div class="col-md-12" style="padding-left:0;">
-                  <h5 style="color: #4C3D33; font-weight:700; margin-bottom:0;">23/07/2016</h5>
-                </div>
-                <div class="col-md-12" style="padding-left:0;">
-                  <p style="margin-bottom:0;">fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd jflkasdjflkasdj flñksadjf</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="row" style="border-bottom: solid 1px; border-color: #4C3D33; margin-left:1em;">
-                <div class="col-md-12" style="padding-left:0;">
-                  <h5 style="color: #4C3D33; font-weight:700; margin-bottom:0;">23/07/2016</h5>
-                </div>
-                <div class="col-md-12" style="padding-left:0;">
-                  <p style="margin-bottom:0;">fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd jflkasdjflkasdj flñksadjf</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row" style="margin-left:3em; margin-right:3em;">
-            <div class="col-md-6">
-              <div class="row" style="border-bottom: solid 1px; border-color: #4C3D33; margin-left:1em;">
-                <div class="col-md-12" style="padding-left:0;">
-                  <h5 style="color: #4C3D33; font-weight:700; margin-bottom:0;">23/07/2016</h5>
-                </div>
-                <div class="col-md-12" style="padding-left:0;">
-                  <p style="margin-bottom:0;">fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd jflkasdjflkasdj flñksadjf</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="row" style="border-bottom: solid 1px; border-color: #4C3D33; margin-left:1em;">
-                <div class="col-md-12" style="padding-left:0;">
-                  <h5 style="color: #4C3D33; font-weight:700; margin-bottom:0;">23/07/2016</h5>
-                </div>
-                <div class="col-md-12" style="padding-left:0;">
-                  <p style="margin-bottom:0;">fdskfjsdlkfj  sdfjlsdjflñksdjflk sdjflk sdjfñlksdjflñskdj fñlsdkjf dsklfjlskd jflkasdjflkasdj flñksadjf</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
+          
           <br><br>
         </div>
         <br>
@@ -241,7 +216,7 @@
       <br>
     </div>
 
-    <div class="col-md-3 hidden-xs">
+    <div class="col-md-4 hidden-xs">
       <br>
       <div class="panel panel-success">
         <div class="panel-heading">Boletines</div>
@@ -249,13 +224,15 @@
             <div class="panel panel-success">
           <div class="panel-heading">Boletines Informativos 1</div>
           <div class="panel-body">
-            <img src="img/logoice.png" class="img-responsive" width="100%" alt="">
+            <p>
+              sdj flksajd;lfk jsa;dlfjs;ldkfj;ls kdjflaksjdlfahs;jdf hasdkjfhadksljgf alskdjhferhfoerhfiuerh jdhgjdfghdfljgh dflkjg
+            </p>
           </div>
         </div>
         <div class="panel panel-success">
-          <div class="panel-heading">Boletines Informativos 2</div>
+          <div class="panel-heading">Estadisticas</div>
           <div class="panel-body">
-            Boletin 2
+            <canvas id="myChart" width="100%" height="100%"></canvas>
           </div>
         </div>
         <div class="panel panel-success">
@@ -273,4 +250,8 @@
 
   </div>
 </div>
+@endsection
+
+@section('script')
+  {{ Html::script('js/estadisticas.js') }}
 @endsection
