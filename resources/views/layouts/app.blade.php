@@ -32,8 +32,8 @@
 
         </div>    
         <div class="row">
-            <div class="col-md-12">
-                 <nav class="navbar">
+            <div class="col-md-12" style="padding: 0; margin: 0;">
+                 <nav class="navbar" style="padding-bottom: 0; margin-bottom: 0;">
                     <div class="container-fluid container-fondo">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
@@ -46,7 +46,7 @@
                         <div class="collapse navbar-collapse" id="app-navbar-collapse">
                             <ul class="nav navbar-nav">
                                 <li><a href="{{ url('/') }}">Inicio</a></li>
-                                <li><a href="{{ url('/history') }}">Historia</a></li>
+                                <li><a href="{{ url('/history') }}">Marco Legal</a></li>
                                 <li><a href="{{ url('/aboutus') }}">Quienes Somos?</a></li>
                                 <li><a href="http://100.192.1.196/" target="_blank" >Visualizador</a></li>
                             </ul>
@@ -76,7 +76,7 @@
                             <div class="col-md-6">
                                 <div class="padding-left">
                                     <a href="{{ url('/') }}">Inicio</a><br>
-                                    <a href="{{ url('history') }}">Historia</a><br>
+                                    <a href="{{ url('history') }}">Marco Legal</a><br>
                                     <a href="{{ url('aboutus') }}">Quienes Somos?</a><br>
                                     <a href="http://100.192.1.196/" target="_blank" >Visualizador</a>
                                 </div>
