@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>ICE Instituto Cruceño de Estadistica</title>
+
+    <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
  
     {{ Html::style('css/bootstrap.min.css') }}
     

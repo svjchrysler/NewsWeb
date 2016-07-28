@@ -5,19 +5,7 @@
 	
 	{!! Form::open(['route' => 'article.store', 'method' => 'POST', 'files' => 'true', 'id' => 'form_article']) !!}
 		<div id="contenido" style="background-color: #FFF;">
-			<div class="container-fluid margin">
-				<div class="row margin">
-					<div class="col-md-12 margin">
-						<div class="jumbotron">
-							<div class="jumbotron position-header" style="position: relative; display: block;">
-								<input type="file" id="header" class="position-header ocultar" style="position: absolute; opacity: 0;" name="header_file">
-								<img class="jumbotron img-header margin" id="img-header" src="https://platzi.com/blog/wp-content/uploads/2016/07/Cover-Colo-React.jpg">								
-							</div>					
-						</div>
-					</div>
-				</div>
-			</div>
-
+			
 			<div class="container" id="element">
 				<div class="row">
 					<div class="col-md-1 ocultar" id="edit-1">
@@ -32,7 +20,6 @@
 					    		</li>
 					    		<li><a href="#">Parrafo</a></li>
 						      	<li><a href="#" id="parrafo">Parrafo</a></li>
-						      	<li><a href="#" id="titulo">Titulo</a></li>
 						      	<li><a href="#" id="subtitulo">Subtitulo</a></li>
 						    </ul>
 						  </div>

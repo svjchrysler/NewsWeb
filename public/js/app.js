@@ -59,8 +59,8 @@ $(document).ready(function() {
 		if (this.files && this.files[0]) {
 			var reader = new FileReader();
 			reader.onload = function(e) {
-				var src = e.target.result;
-				var template = `<div class="row" id="edit-${count}">
+			var src = e.target.result;
+			var template = `<div class="row" id="edit-${count}">
 							<div class="col-md-1 ocultar">
 								<button class="btn btn-default btn-option-subtitle" onclick="eliminar(${count})">
 									<img class="img" style="margin-top: 1em;" src="http://image.flaticon.com/icons/svg/148/148782.svg">
@@ -68,13 +68,9 @@ $(document).ready(function() {
 							</div>
 							<div class="col-md-11">
 								<div class="row margin-espacio">
-									<div class="col-md-8 text-center">
+									<div class="col-md-12 text-center">
 										<img src="${src}" class="padding-bottom" style="margin-top: 1.5em;" width="100%" />
-									</div>
-									<div class="col-md-4">
-										<div contenteditable class="editable h2 tipografia espacios-blanco"></div>	
-										<div contenteditable class="editable p tipografia espacios-blanco"></div>
-									</div>
+									</div>									
 								</div>
 							</div>
 						</div>`
