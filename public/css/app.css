@@ -178,8 +178,9 @@
 }
 
 .col-space {
-	border-right: solid; 
+	border-right: solid;
 	border-color: #FFF;
+	padding: 0;
 }
 
 .margin-col {

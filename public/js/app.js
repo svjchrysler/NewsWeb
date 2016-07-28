@@ -10,6 +10,21 @@ $(document).ready(function() {
 		$('#photo').val(photo)
 	})
 
+	$('#fileimage').change(function() {
+		if (this.files && this.files[0]) {
+			var reader = new FileReader();
+			reader.onload = function(e) {
+				var src = e.target.result;			
+				$('#image-cargar').val(src)				
+			}
+			reader.readAsDataURL(this.files[0]);
+		}
+	})
+
+	$('#category').change(function() {
+		alert($('#category').val())
+	})
+
 	$('#titulo').click(function() {
 		var template = `<div class="row" id="edit-${count}">
 							<div class="col-md-1 ocultar">
@@ -99,3 +114,7 @@ function eliminar(id) {
 	$(element).remove();
 }
 
+
+function cargarSubcategoria(categoria) {
+	$.ajax('')
+}

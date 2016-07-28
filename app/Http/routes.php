@@ -24,3 +24,9 @@ Route::get('aboutus', 'IndexController@about');
 Route::get('history', 'IndexController@history');
 
 Route::get('visualizador', 'IndexController@visualizador');
+
+Route::resource('category', 'CategoryController');
+
+Route::resource('subcategory', 'SubCategoryController');
+
+Route::resource('content', 'ContentController');

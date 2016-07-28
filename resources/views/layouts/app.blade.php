@@ -17,7 +17,7 @@
     
     @yield('style')
 </head>
-<body id="app-layout" style="background-color: #DFF0D8;">
+<body id="app-layout" style="background:url('img/fondo2.jpg') no-repeat; background-size=cover; ">
     <div class="container" style="background-color: #FFF;">
         <div class="row">
             <div class="col-md-2 hidden-xs">
@@ -97,6 +97,7 @@
 
     {{ Html::script('js/jquery.min.js') }}
     {{ Html::script('js/bootstrap.min.js') }}
+    {{ Html::script('js/app.js') }}
     @yield('script')
 </body>
 </html>
