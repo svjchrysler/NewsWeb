@@ -212,7 +212,9 @@ font {
 .back {
 	background-color: #EDEBE2;
 	margin-left: .5em;
+	margin-right: .5em;
 	padding-right: 0;
+	width: 100%;
 }
 
 .col-space {
