@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-	<div class="container" style="padding:0;">
+	<div class="container fluid" style="padding:0;">
 	{!! Form::open(['route' => 'article.store', 'method' => 'POST', 'id' => 'form_article']) !!}
 		<div id="contenido" style="background-color: #FFF;">
 			<div class="container" id="element">

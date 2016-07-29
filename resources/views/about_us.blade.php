@@ -2,6 +2,7 @@
 
 @section('content')
 	<div class="container" style="background-color: #FFF;">
+		<br>
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<img src="img/logoice.png" width="500" alt="">
@@ -31,5 +32,7 @@
 				</p>
 			</div>
 		</div>
+	<br>
 	</div>
+
 @endsection

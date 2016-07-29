@@ -3,6 +3,13 @@
 @section('content')
 
 <div class="container" style="background-color: #FFF;">
+
+  <div class="row">
+    <div class="col-md-12" style="padding:0;">
+      <img src="/img/img_santacruz.jpg" width="100%" alt="">
+    </div>
+  </div>
+
     
   <div class="row">
 
@@ -14,19 +21,17 @@
         @foreach($array[1] as $category)
           <div class="col-md-4 col-sm-6 col-xs-12 separador-col">
             <div class="row fondo-category separacion tamano">
-              <a href="/content/category/{{ $category->id }}" class="select-category aling-center">
+              <a href="/content/category/{{ $category->id }}" class="select-category aling-center decoration-span">
                 <div class="col-md-4 col-sm-4 col-xs-6 col-space">
                   <img src="{{ $category->image }}" class="img-responsive center-block" style="padding-right:.3em;" width="100%">
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-6 margin-col">
-                  <span>{{ $category->title }}</span>
+                  <span class="decoration-span">{{ $category->title }}</span>
                 </div>  
               </a>            
             </div>
           </div>
-        @endforeach
-
-        
+        @endforeach       
 
       </div>
 

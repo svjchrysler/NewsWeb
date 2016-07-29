@@ -284,7 +284,6 @@ font {
 	text-style: normal !important;
 }
 
-
 .h5-date {
 	color: #4C3D33; 
 	font-weight:700; 
@@ -313,4 +312,12 @@ font {
 
 .tipografia {
 	font-family: Arial;
+}
+
+.decoration-span {
+	text-decoration: none !important;
+}
+
+.decoration-span:hover {
+	text-decoration: none !important;
 }

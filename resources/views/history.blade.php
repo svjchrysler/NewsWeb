@@ -2,6 +2,7 @@
 
 @section('content')
 	<div class="container" style="background-color: #FFF;">
+		<br>
 		<div class="row">
 			<div class="col-md-12 text-center">
 				<img src="img/logoice.png" width="500" alt="">
@@ -26,5 +27,7 @@
 				<p class="parrafo">En términos generales el ICE se crea para aportar a los gobiernos autónomos municipales y a las instituciones regionales con información estadística e indicadores del desarrollo regional que sean de calidad, pertinentes, veraces y oportunos.</p>
 			</div>
 		</div>
+		<br>
 	</div>
+	
 @endsection
