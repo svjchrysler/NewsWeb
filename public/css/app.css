@@ -15,7 +15,7 @@
 }
 
 .btn-option-title {
-	margin-top: 2em;
+	margin-top: 2.5em;
 }
 
 .btn-option-subtitle {
@@ -34,6 +34,34 @@
 	padding: 10px;
 	border-bottom: solid;
 	margin-top: 1em;
+	font-family: Arial;
+	text-decoration: none !important;
+	font-style: normal !important; 
+}
+
+u {
+	font-family: Arial !important;
+	text-decoration: none !important;	
+	font-style: normal !important; 
+	font-size: 18px !important;
+	color: #757575 !important;
+}
+
+i {
+	font-family: Arial !important;
+	text-decoration: none !important;	
+	font-style: normal !important;	
+	font-size: 18px !important;
+	color: #757575 !important;
+}
+
+font {
+	font-family: Arial !important;
+	text-decoration: none !important;	
+	font-style: none !important;
+	font-size: 18px !important;
+	color: #757575 !important;
+	padding: 0 !important; 
 }
 
 .padding {
@@ -49,23 +77,33 @@
 }
 
 .h1 {
-	font-size: 24px;
+	font-size: 26px;
 	color: #424242;
-	font-family: 'PT Serif', serif;
+	font-family: Arial;
 	font-weight: 700;
 }
 
 .h2 {
 	font-size: 21px;
 	color: #616161;
-	font-family: 'PT Serif', serif;
+	font-family: Arial;
 	font-weight: 700;
 }
 
 .p {
-	font-size: 18px;
-	color: #757575;
-	font-family: 'PT Serif', serif;
+	font-family: Arial !important;
+	text-decoration: none !important;	
+	font-style: normal !important;	
+	font-size: 18px !important;
+	color: #757575 !important;
+}
+
+.editable span {
+	font-family: Arial !important;
+	text-decoration: none !important;	
+	font-style: normal !important;	
+	font-size: 18px !important;
+	color: #757575 !important;	
 }
 
 .margin {
@@ -183,10 +221,24 @@
 	padding: 0;
 }
 
+.tamano {
+	width: 275px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
 .margin-col {
-	color: #FFF; 
-	margin-top:1em;
-	font-size: 12px;
+	color: #FFF;
+	font-size: 15px;
+}
+
+.aling-center {
+  	display: flex;
+	align-items: center;
+    justify-content: center;
 }
 
 .container {
@@ -228,7 +280,8 @@
 }
 
 .padding-col a:hover {
-	text-decoration: none;
+	text-decoration: none !important;
+	text-style: normal !important;
 }
 
 

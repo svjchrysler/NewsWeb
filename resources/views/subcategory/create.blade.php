@@ -12,7 +12,7 @@
 			<div class="panel panel-primary">
 	          <div class="panel-heading">Estadisticas</div>
 	          <div class="panel-body" style="padding:3em;">
-	            {!! Form::open(['route' => 'content.store', 'method' => 'POST']) !!}
+	            {!! Form::open(['route' => 'subcategory.store', 'method' => 'POST']) !!}
 					<div class="form-group">
 						<label for="category">Categoria</label>
 						<select name="category" class="form-control">

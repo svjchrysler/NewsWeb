@@ -2,10 +2,8 @@
 
 @section('content')
 	<div class="container" style="padding:0;">
-	
-	{!! Form::open(['route' => 'article.store', 'method' => 'POST', 'files' => 'true', 'id' => 'form_article']) !!}
+	{!! Form::open(['route' => 'article.store', 'method' => 'POST', 'id' => 'form_article']) !!}
 		<div id="contenido" style="background-color: #FFF;">
-			
 			<div class="container" id="element">
 				<div class="row">
 					<div class="col-md-1 ocultar" id="edit-1">
@@ -38,7 +36,6 @@
 						<input type="hidden" name="user" value="{{ Auth::user()->id }}">
 						<input type="hidden" name="title" id="title">
 						<input type="hidden" name="content" id="content_html">
-						<input type="hidden" name="photo" id="photo">
 						<button type="submit" class="btn btn-primary btn-lg btn-save">Publicar</button>
 					</div>
 				</div>
@@ -47,8 +44,6 @@
 		
 	{!! Form::close() !!}
 	</div>
-@endsection
 
-@section('script')
-	{{ Html::script('js/app.js') }}
+	<br><br>
 @endsection

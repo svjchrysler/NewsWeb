@@ -12,13 +12,13 @@
       <div class="row">
 
         @foreach($array[1] as $category)
-          <div class="col-md-4 separador-col">
-            <div class="row fondo-category separacion">
-              <a href="/econony" class="select-category">
-                <div class="col-md-4 col-space">
-                  <img src="{{ $category->image }}" width="100%">
+          <div class="col-md-4 col-sm-6 col-xs-12 separador-col">
+            <div class="row fondo-category separacion tamano">
+              <a href="/content/category/{{ $category->id }}" class="select-category aling-center">
+                <div class="col-md-4 col-sm-4 col-xs-6 col-space">
+                  <img src="{{ $category->image }}" class="img-responsive center-block" style="padding-right:.3em;" width="100%">
                 </div>
-                <div class="col-md-8 margin-col">
+                <div class="col-md-8 col-sm-8 col-xs-6 margin-col">
                   <span>{{ $category->title }}</span>
                 </div>  
               </a>            
@@ -89,7 +89,7 @@
       <div class="panel panel-success">
         <div class="panel-heading">Productos Estadisticos</div>
         <div class="panel-body">
-            <div class="panel panel-success">
+        <div class="panel panel-success">
           <div class="panel-heading">Boletin Informativo</div>
           <div class="panel-body">
             <p>

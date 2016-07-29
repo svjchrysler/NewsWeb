@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>ICE Instituto Cruceño de Estadistica</title>
-
-    <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700' rel='stylesheet' type='text/css'>
  
     {{ Html::style('css/bootstrap.min.css') }}
     
@@ -17,18 +15,18 @@
     
     @yield('style')
 </head>
-<body id="app-layout" style="background:url('img/fondo2.jpg') no-repeat; background-size=cover; ">
+<body id="app-layout" style="background:url('/img/fondo2.jpg'); background-size=cover;">
     <div class="container" style="background-color: #FFF;">
         <div class="row">
-            <div class="col-md-2 hidden-xs">
+            <div class="col-md-2 hidden-xs hidden-sm">
                 <a href="{{ url('/') }}">
                     <img src="/img/logoice.png" class="img-responsive" alt="">
                 </a>
             </div>
-            <div class="col-md-8 col-xs-12">
+            <div class="col-md-8 col-sm-12 col-xs-12">
                 <h3 class="text-center" style="color:#1B5E20; font-weight:700; padding-top:.4em;">Instituto Cruceño de Estadistica</h3>
             </div>
-            <div class="col-md-2 hidden-xs">
+            <div class="col-md-2 hidden-xs hidden-sm">
                 <img src="/img/logogobernacion.png" class="img-responsive" alt="">
             </div>
 
@@ -80,7 +78,7 @@
                                     <a href="{{ url('/') }}">Inicio</a><br>
                                     <a href="{{ url('history') }}">Marco Legal</a><br>
                                     <a href="{{ url('aboutus') }}">Quienes Somos?</a><br>
-                                    <li><a href="{{ url('/visualizador') }}">Visualizador</a></li>
+                                    <a href="{{ url('/visualizador') }}">Visualizador</a>
                                 </div>
                             </div>
                             <div class="col-md-6 text-right margin-top">

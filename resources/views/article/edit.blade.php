@@ -6,7 +6,6 @@
 
 @section('content')
 	<div class="container" style="background-color: #FFF;">
-	<br>
 		<?= $article->content; ?>	
 	</div>
 	

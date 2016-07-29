@@ -1,13 +1,12 @@
 var count = 2;
 $(document).ready(function() {
 
+	var urldata = window.location.pathname
 	$('#form_article').submit(function(event) {
 		var contenido = $('#contenido').html()
 		$('#content_html').val(contenido)
 		var title = $('#title-header').text()
 		$('#title').val(title)
-		var photo = $('#img-header').attr('src')
-		$('#photo').val(photo)
 	})
 
 	$('#fileimage').change(function() {
@@ -22,10 +21,13 @@ $(document).ready(function() {
 	})
 
 	$('#category').change(function() {
-		alert($('#category').val())
+		cargarSubcategoria($('#category').val())	
 	})
 
-	$('#titulo').click(function() {
+	if(urldata === '/content/create')
+		cargarSubcategoria($('#category').val())
+
+	/*$('#titulo').click(function() {
 		var template = `<div class="row" id="edit-${count}">
 							<div class="col-md-1 ocultar">
 								<button class="btn btn-default btn-option-title" onclick="eliminar(${count})">
@@ -37,7 +39,14 @@ $(document).ready(function() {
 							</div>
 						</div>`
 		count++;
-		$('#element').append(template)
+		$('#element').after(template)
+	})*/
+
+	$('#form_content').submit(function(event) {
+		var contenido = $('#contenido').html()
+		$('#content_html').val(contenido)
+		var title = $('#title-header').text()
+		$('#title').val(title)
 	})
 
 	$('#subtitulo').click(function() {
@@ -83,9 +92,11 @@ $(document).ready(function() {
 							</div>
 							<div class="col-md-11">
 								<div class="row margin-espacio">
-									<div class="col-md-12 text-center">
+									<div class="col-md-2"></div>
+									<div class="col-md-8 text-center">
 										<img src="${src}" class="padding-bottom" style="margin-top: 1.5em;" width="100%" />
-									</div>									
+									</div>
+									<div class="col-md-2"></div>			
 								</div>
 							</div>
 						</div>`
@@ -96,7 +107,7 @@ $(document).ready(function() {
 		}
 	})
 
-	$('#header').change(function() {
+	/*$('#header').change(function() {
 		if (this.files && this.files[0]) {
 			var reader = new FileReader();
 			reader.onload = function(e) {
@@ -105,7 +116,7 @@ $(document).ready(function() {
 			}
 			reader.readAsDataURL(this.files[0]);
 		}	
-	})
+	})*/
 })
 
 
@@ -116,5 +127,27 @@ function eliminar(id) {
 
 
 function cargarSubcategoria(categoria) {
-	$.ajax('')
+	$('#subcategory option').remove();
+	$.ajax({
+		url: 'http://localhost:8000/subcategory/get/'+categoria
+	}).done(function(e) {
+		$.each(e, function (i, item) {
+		    $('#subcategory').append($('<option>', { 
+		        value: item.id,
+		        text : item.title 
+		    }));
+		});
+	})
+}
+
+function agregar_contenido(subcategory) {
+	$('#container-padre').empty()
+	$.ajax({
+		url: 'http://localhost:8000/content/'+subcategory
+	}).done(function(e) {
+		var template = e.content
+		$('#container-padre').append(template)
+		eliminardatos()
+	})
+	
 }

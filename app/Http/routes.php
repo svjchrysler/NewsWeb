@@ -30,3 +30,7 @@ Route::resource('category', 'CategoryController');
 Route::resource('subcategory', 'SubCategoryController');
 
 Route::resource('content', 'ContentController');
+
+Route::get('/subcategory/get/{id}', 'SubCategoryController@getsubcategories');
+
+Route::get('/content/category/{id}', 'ContentController@index');

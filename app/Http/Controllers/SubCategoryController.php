@@ -29,4 +29,9 @@ class SubCategoryController extends Controller
 		$subcategory->save();
 		return redirect('/');
 	}
+
+	public function getSubCategories($id) {
+		$subcategories = SubCategory::where('category_id', '=', $id)->get();
+		return $subcategories;
+	}
 }

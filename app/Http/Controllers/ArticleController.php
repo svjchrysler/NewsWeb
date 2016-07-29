@@ -28,14 +28,10 @@ class ArticleController extends Controller
 		$article->user_id = $request->user;
 		$article->title = $request->title;
 		$article->content = $request->content;
-		$article->photo = $request->photo;
 		$date = Carbon::now();
 		$article->publicationDate = $date->format('Y-m-d');
 		$article->save();
-		/*$articles = DB::table('articles')->select('articles.id', 'articles.title', 'articles.publicationDate')
-										->orderby('articles.created_at', 'desc')
-										->get();*/
-		return redirect('/')/*->with('articles', $articles)*/;
+		return redirect('/');
 	}
 
 	public function news($id) {

@@ -9,7 +9,7 @@
 			</div>
 			<div class="col-md-8">
 
-			<div class="panel panel-primary">
+			<div class="panel panel-success">
 	          <div class="panel-heading">Estadisticas</div>
 	          <div class="panel-body" style="padding:3em;">
 	            {!! Form::open(['route' => 'category.store', 'method' => 'POST', 'files' => 'true', 'id' => 'form_category']) !!}
