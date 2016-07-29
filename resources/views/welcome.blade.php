@@ -11,16 +11,16 @@
   </div>
 
     
-  <div class="row">
+  <div class="row" style="width:100%">
 
-    <div class="col-md-8 espacio">
+    <div class="col-md-8 espacio" style="padding-right:0;">
 
       <!-- Categorias -->
-      <div class="row">
+      <div class="row" style="width:100%;">
 
         @foreach($array[1] as $category)
           <div class="col-md-4 col-sm-6 col-xs-12 separador-col">
-            <div class="row fondo-category separacion tamano">
+            <div class="row fondo-category separacion tamano" >
               <a href="/content/category/{{ $category->id }}" class="select-category aling-center decoration-span">
                 <div class="col-md-4 col-sm-4 col-xs-6 col-space">
                   <img src="{{ $category->image }}" class="img-responsive center-block" style="padding-right:.3em;" width="100%">
@@ -39,47 +39,47 @@
       <br>
       <div class="row back">
         <div class="col-md-12">
-          <h5 class="h5-style">Noticias</h5>
+          <h3 class="h5-style">Noticias</h3>
 
-
-          <?php $count = 1; ?>
           @foreach($array[0] as $article)
-            @if($count == 2)
-                <div class="col-md-6">
+           
+            <div class="row row-style">
+                <div class="col-md-12">
                   <div class="row">
                     <div class="col-md-12 padding-col">
-                      <h5 class="h5-date">{{ $article->publicationDate }}</h5>
+                      <?php $date = DateTime::createFromFormat('Y-m-d', $article->publicationDate)->format('d-m-Y'); ?>
+                      <h4 class="h5-date">{{ $date }}</h4>
                     </div>
                     <div class="col-md-12 padding-col">
                       <a href="{{ url('article/news/'.$article->id) }}">
-                        <p>{{ $article->title }}</p>
+                        <p style="font-size:20px;">{{ $article->title }}</p>  
                       </a>
+                      <div class="row">
+                        @if($article->photo != "")
+                          <div class="col-md-4">
+                            <img src="{{ $article->photo }}" class="img-responsive" alt="">
+                          </div>
+                          <div class="col-md-8">
+                            <p>
+                              {{ $article->paragraph }}
+                            </p>
+                          </div>  
+                        @else
+                          <div class="col-md-12">
+                            <p>
+                              {{ $article->paragraph }}
+                            </p>
+                          </div>
+                        @endif
+                        
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <?php $count = 1; ?>
-            @else
-              <div class="row row-style">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-md-12 padding-col">
-                      <h5 class="h5-date">{{ $article->publicationDate }}</h5>
-                    </div>
-                    <div class="col-md-12 padding-col">
-                      <a href="{{ url('article/news/'.$article->id) }}">
-                        <p>{{ $article->title }}</p>  
-                      </a>
-                    </div>
-                  </div>
-                </div>  
-              <?php $count++; ?>              
-            @endif
-          @endforeach
-
-          @if($count == 2)
             </div>
-          @endif
+                            
+            
+          @endforeach
           
           <br><br>
         </div>
@@ -89,7 +89,7 @@
       <br>
     </div>
 
-    <div class="col-md-4 hidden-xs">
+    <div class="col-md-4 hidden-xs" style="padding-right:0;padding-left:2em;">
       <br>
       <div class="panel panel-success">
         <div class="panel-heading">Productos Estadisticos</div>

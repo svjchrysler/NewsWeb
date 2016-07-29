@@ -28,6 +28,8 @@ class ArticleController extends Controller
 		$article->user_id = $request->user;
 		$article->title = $request->title;
 		$article->content = $request->content;
+		$article->photo = $request->photo;
+		$article->paragraph = $request->paragraph;
 		$date = Carbon::now();
 		$article->publicationDate = $date->format('Y-m-d');
 		$article->save();

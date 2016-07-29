@@ -18,7 +18,6 @@ use DB;
 
 class ContentController extends Controller
 {
-
 	public function index($id) {
 		$subcategories = SubCategory::where('category_id', '=', $id)->get();
 		return view('contentcategory.index')->with('subcategories', $subcategories);

@@ -18,7 +18,7 @@ class IndexController extends Controller
 
 		$array = array();
 
-		$articles = DB::table('articles')->select('articles.id', 'articles.title', 'articles.publicationDate')
+		$articles = DB::table('articles')->select('articles.id', 'articles.title', 'articles.publicationDate', 'articles.photo', 'articles.paragraph')
 										->orderby('articles.created_at', 'desc')
 										->get();
 

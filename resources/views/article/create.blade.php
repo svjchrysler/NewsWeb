@@ -36,6 +36,8 @@
 						<input type="hidden" name="user" value="{{ Auth::user()->id }}">
 						<input type="hidden" name="title" id="title">
 						<input type="hidden" name="content" id="content_html">
+						<input type="hidden" name="photo" id="photoart">
+						<input type="hidden" name="paragraph" id="paragraphart">
 						<button type="submit" class="btn btn-primary btn-lg btn-save">Publicar</button>
 					</div>
 				</div>

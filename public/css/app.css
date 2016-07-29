@@ -204,15 +204,12 @@ font {
 }
 
 .separador-col {
-	padding-left:.5em;
-	padding-right:.5em;
 	padding-top: .4em;
 }
 
 .back {
 	background-color: #EDEBE2;
 	margin-left: .5em;
-	margin-right: .5em;
 	padding-right: 0;
 	width: 100%;
 }
@@ -224,7 +221,7 @@ font {
 }
 
 .tamano {
-	width: 275px;
+	width: 265px;
 	height: 80px;
 	display: flex;
 	align-items: center;
@@ -256,9 +253,7 @@ font {
 }
 
 .h5-style {
-	font-weight:700; 
-	font-size: 1.2em;
-	margin-top:2em;
+	font-weight:700;
 }
 
 .row-style {

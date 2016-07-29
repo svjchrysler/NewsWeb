@@ -7,6 +7,10 @@ $(document).ready(function() {
 		$('#content_html').val(contenido)
 		var title = $('#title-header').text()
 		$('#title').val(title)
+		var photo = $('#img-1').attr('src')
+		$('#photoart').val(photo)
+		var paragraph = $('#p-1').text()
+		$('#paragraphart').val(paragraph)
 	})
 
 	$('#fileimage').change(function() {
@@ -72,7 +76,7 @@ $(document).ready(function() {
 								</button>
 							</div>
 							<div class="col-md-11">
-								<div contenteditable class="editable p text-justify tipografia"></div>
+								<div contenteditable id="p-1" class="editable p text-justify tipografia"></div>
 							</div>
 						</div>`
 		count++;
@@ -94,7 +98,7 @@ $(document).ready(function() {
 								<div class="row margin-espacio">
 									<div class="col-md-2"></div>
 									<div class="col-md-8 text-center">
-										<img src="${src}" class="padding-bottom" style="margin-top: 1.5em;" width="100%" />
+										<img src="${src}" id="img-1" class="padding-bottom" style="margin-top: 1.5em;" width="100%" />
 									</div>
 									<div class="col-md-2"></div>			
 								</div>
