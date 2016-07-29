@@ -16,7 +16,7 @@
     @yield('style')
 </head>
 <body id="app-layout" style="background:url('/img/fondo2.jpg'); background-size=cover;">
-    <div class="container" style="background-color: #FFF;">
+    <div class="container" style="background-color: #FFF; border-radius: 0 0 1em 1em;">
         <div class="row">
             <div class="col-md-2 hidden-xs hidden-sm">
                 <a href="{{ url('/') }}">
