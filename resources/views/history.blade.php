@@ -5,7 +5,17 @@
 		<br>
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<img src="img/logoice.png" width="500" alt="">
+				<div class="row">
+					<div class="col-md-4">
+					
+					</div>
+					<div class="col-md-4">
+						<img class="img-responsive" src="img/logoice.png" width="100%" alt="">	
+					</div>
+					<div class="col-md-4">
+						
+					</div>	
+				</div>
 			</div>
 			<div class="col-md-12 padding">
 				<h4 class="subtitle">Marco legal para el funcionamiento del ICE</h4>
